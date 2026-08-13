@@ -15,5 +15,16 @@ function isPalindrome(s: string): boolean{
         return isPalindrome
     }
 }
-
 console.log(isPalindrome("Ama"))
+console.log("=============================================")
+//Q2. Write a function calculateFactorial(n: number): number that
+//  computes the factorial of a non-negative integer.
+
+function calculateFactorial(n: number): number{
+    let k = 1;
+    for(let i = 1; i<=n; i++){
+        k = k * i
+    }
+    return k;
+}
+console.log(calculateFactorial(6))
