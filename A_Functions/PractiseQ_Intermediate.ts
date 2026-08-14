@@ -28,3 +28,22 @@ function calculateFactorial(n: number): number{
     return k;
 }
 console.log(calculateFactorial(6))
+
+console.log("===============================================")
+//Q3. Create Prime check function
+function isPrime(num: number): boolean{
+    let prime: boolean = false
+    let count: number = 0
+    for(let i=1; i<= num; i++){
+        if(num%i == 0)
+        {
+            count++
+        }
+    }
+    if(count == 2){
+        prime = true
+    }
+    return prime
+}
+
+console.log(isPrime(22));
